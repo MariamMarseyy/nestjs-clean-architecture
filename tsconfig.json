@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": false,
+    "noImplicitAny": false,
+    "resolveJsonModule": true,
+    "removeComments": true,
+    "noLib": false,
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "allowJs": true,
+    "outDir": "./dist",
+    "baseUrl": "src",
+    "paths": {
+      "@modules/*": ["modules/*"],
+      "@common/*": ["common/*"],
+      "@schemas/*": ["database/mongo/schemas/*"],
+      "@entities/*": ["database/postgres/entities/*"],
+      "@config/*": ["common/config/*"],
+      "@enums/*": ["common/enums/*"],
+      "@constants/*": ["common/constants/*"],
+      "@types/*": ["common/types/*"],
+      "@utils/*": ["common/helpers/utils/*"],
+      "@dto/*": ["common/dtos/*"],
+      "@middlewares/*": ["common/middlewares/*"],
+      "@decorators/*": ["common/decorators/*"],
+      "@responses/*" : ["common/responses/*"],
+      "@interfaces/*": ["common/interfaces/*"],
+      "@exceptions/*": ["common/exceptions/*"],
+      "@validations/*": ["common/validations/*"]
+    }
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
